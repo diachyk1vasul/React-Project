@@ -1,10 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "lib": [
       "dom",
-      "dom.iterable",
-      "esnext"
+      "es2017"
+    ],
+    "mapRoot": "./",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "outDir": "../dist/client",
+    "sourceMap": true,
+    "target": "es5",
+    "typeRoots": [
+      "../node_modules/@types"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -12,13 +24,14 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react"
   },
+  "exclude": [
+    "node_modules"
+  ],
   "include": [
     "src"
   ]
